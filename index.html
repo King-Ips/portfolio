@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ipeleng Tsamai — Software Engineer</title>
+  <meta name="description" content="Ipeleng Tsamai — Junior Software Engineer. Building voice-driven AI apps and real-world solutions. WeThinkCode_ Academy, Johannesburg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+  
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <canvas id="grain"></canvas>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">IT</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag reveal">Actively seeking new opportunities · Johannesburg, ZA</div>
+      <h1 class="hero-name reveal">
+        Ipeleng<br>
+        <span class="hero-name-accent">Tsamai</span>
+      </h1>
+      <p class="hero-role reveal">Junior Software Engineer</p>
+      <p class="hero-desc reveal">
+        Building voice-driven AI and cloud-powered apps that solve<br>
+        real problems for real people, especially in underserved communities.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-frame">
+        <div class="profile-ring">
+          <img src="ipeleng.png" alt="Ipeleng Tsamai" class="profile-img" onerror="this.parentElement.classList.add('no-photo')">
+          <div class="profile-initials">IT</div>
+        </div>
+        <div class="profile-badge badge-1">
+          <span class="badge-icon">🌾</span>
+          <span>FarmVoice AI</span>
+        </div>
+        <div class="profile-badge badge-2">
+          <span class="badge-icon">⚡</span>
+          <span>WeThinkCode_</span>
+        </div>
+        <div class="profile-badge badge-3">
+          <span class="badge-icon">🎙️</span>
+          <span>Voice AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="label reveal">01 — About</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2>Engineer.<br>Builder.<br>Problem solver.</h2>
+        </div>
+        <div class="about-right reveal">
+          <p>
+            Final Year software engineering student at <strong>WeThinkCode_ Academy</strong> with 
+            1 month left. I specialise in building <strong>apps that matter</strong>
+            using AI, cloud architecture, and thoughtful engineering to solve problems 
+            that affect everyday people.
+          </p>
+          <p>
+            My current project, <strong>FarmVoice AI</strong>, is a voice-driven livestock 
+            management app built for blind and visually impaired farmers across South Africa. 
+            I entered it into the <strong>Isazi.ai × UNISA AI for Accessibility Hackathon 2026</strong>.
+          </p>
+          <p>
+            I am Curious, Open-Minded And Self Driven
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Years coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="label reveal">02 — Skills</div>
+      <h2 class="section-h2 reveal">What I work with</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Backend logic, data processing, automation scripts, and AI integrations.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Vanilla JS, DOM manipulation, Web Speech API, Node.js basics.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎙️</div>
+          <h3>Voice AI</h3>
+          <p>Speech recognition, text-to-speech, Gemini Vision API, real-time voice UX design.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p>GitHub Pages deployment, CI/CD pipelines, AWS EC2, IAM & Shared Responsibilities.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>HTML & CSS</h3>
+          <p>responsive layouts, animations, accessibility-first design.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">☕</div>
+          <h3>Java</h3>
+          <p>Object-oriented programming, algorithms, WeThinkCode_ core curriculum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="label reveal">03 — Projects</div>
+      <h2 class="section-h2 reveal">Things I've built</h2>
+
+      <!-- Featured project -->
+      <div class="project-featured reveal">
+        <div class="project-featured-content">
+          <div class="project-tag">Featured · Hackathon 2026</div>
+          <h3>FarmVoice AI</h3>
+          <p>
+            A fully voice-driven livestock management app for blind and visually impaired 
+            farmers in South Africa. One tap unlocks voice forever. Global commands work 
+            anywhere in the app. AI detects animal breeds from photos via Gemini Vision. 
+            Built for the <strong>Isazi.ai × UNISA AI for Accessibility Hackathon</strong>.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Web Speech API</span>
+            <span>Gemini AI</span>
+            <span>GitHub Pages</span>
+            <span>GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/King-Ips/cloud-farmvoice-ai" target="_blank" class="btn-primary btn-sm">GitHub</a>
+            <a href="#" class="btn-ghost btn-sm">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-featured-visual">
+          <div class="project-mock">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-screen">
+              <div class="mock-app">
+                <div class="mock-logo">🌾</div>
+                <div class="mock-title">FarmVoice AI</div>
+                <div class="mock-wave">
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                </div>
+                <div class="mock-listening">Listening...</div>
+                <div class="mock-status">Say "My Livestock" to continue</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other projects -->
+      <div class="projects-row">
+        <div class="project-card-sm reveal">
+          <div class="proj-num">02</div>
+          <h3>FlowAI</h3>
+          <p>
+            Voice-driven intelligent daily planner that actively guides users through 
+            their schedule in real time. Priority system, smart reminders, live clock engine. 
+            I'm always learning and always building.
+          </p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>Web Speech API</span>
+            <span>localStorage</span>
+          </div>
+          <a href="#" class="project-arrow">View project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="label reveal">04 — Experience</div>
+      <h2 class="section-h2 reveal">Journey so far</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 – May 2026</div>
+            <h3>WeThinkCode_ Academy</h3>
+            <p>Software Engineering Programme, Final year. Core: Python, Java, algorithms, cloud architecture, collaborative engineering.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">October 2025</div>
+            <h3>MTN MoMo Hackathon</h3>
+            <p>Participated in the MTN MoMo Hackathon 2025. I collaborated to built an app that helps people make Wise financial decisions.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">March 2026</div>
+            <h3>Isazi.ai × UNISA Hackathon</h3>
+            <p>Accepted into the AI for Accessibility Hackathon. Built FarmVoice AI voice-driven livestock management app for blind and visually impaired farmers.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 – Present</div>
+            <h3>Independent App Development</h3>
+            <p>Learning & Building:  Software development, Using GitHub Actions for CI/CD, Gemini API for AI features, GitHub Pages for deployment & Cloud</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot-future"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">May 2026</div>
+            <h3>Graduating & Ready to build</h3>
+            <p>I am Seeking an internship or junior software engineering role, where I can contribute to real world products while growing within a collaborative, high impact team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <div class="section-inner">
+      <div class="label reveal">05 — Certificates</div>
+      <h2 class="section-h2 reveal">Certificates</h2>
+
+      <div class="projects-row">
+        <div class="project-card-sm reveal">
+<div class="proj-num">01</div>
+          <h3>WeThinkCode_ Programme (Graduating May 2026)</h3>
+          <p>Final-year Occupational Certificate: Software Engineering [NQF Level 6]. 1 month to graduation.</p>
+          <a href="#" class="project-arrow" onclick="alert('Graduating May 2026 — certificate coming soon!')">Certificate Soon →</a>
+        </div>
+
+        <div class="project-card-sm reveal">
+<div class="proj-num">02</div>
+          <h3>GenAI Certificate</h3>
+          <p>I gained foundational knowledge of generative AI, including prompt engineering, practical AI applications, and using AI tools to improve productivity in software development and problem solving.</p>
+          <a href="https://drive.google.com/file/d/1Kgi0xklXHXS-OE0wthGEQXkvCkJnqh5a/view?usp=sharing" target="_blank" class="project-arrow">View Certificate →</a>
+        </div>
+
+        <div class="project-card-sm reveal">
+<div class="proj-num">03</div>
+          <h3>AWS Certified Developer – Associate</h3>
+          <p>I learned how to develop, deploy, and maintain applications on AWS, including working with core services like compute, storage, databases, and APIs.</p>
+          <a href="https://drive.google.com/file/d/1l4Vmb8CfVEOy4E0iCII2yC5M1KYbMXDW/view?usp=sharing" target="_blank" class="project-arrow">View Certificate →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="label reveal">06 — Contact</div>
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <h2>Let's build<br>something<br><span class="accent-text">worth building.</span></h2>
+          <p>
+            I'm actively looking for Internship/junior software engineering roles. 
+            If you're building something interesting and need someone who's 
+            all-in let's talk.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:ipstsamai@gmail.com" class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              ipstsamai@gmail.com
+            </a>
+            <a href="https://github.com/King-Ips" target="_blank" class="contact-link">
+              <span class="contact-link-icon">⌥</span>
+              github.com/King-Ips
+            </a>
+            <a href="https://www.linkedin.com/in/ipeleng-tsamai-7a844022a/" target="_blank" class="contact-link">
+              <span class="contact-link-icon">◈</span>
+              linkedin.com/in/ipeleng
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Send message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-success" id="form-success">Message sent! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Ipeleng Tsamai</span>
+      <span>Build with purpose · Johannesburg, ZA</span>
+      <span>WeThinkCode_ Graduate</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
